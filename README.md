@@ -1,37 +1,40 @@
 # Cymarl-Framework
 
 <p align="center">
-  <img src="https://img.shields.io/badge/SIEM-Splunk-blue">
-  <img src="https://img.shields.io/badge/Endpoint-Sysmon-brightgreen">
-  <img src="https://img.shields.io/badge/Attack-Simulation-orange">
+  <img src="https://img.shields.io/badge/Cybersecurity-MARL-darkred">
+  <img src="https://img.shields.io/badge/Reinforcement-Learning-blue">
+  <img src="https://img.shields.io/badge/PPO-Training-purple">
+  <img src="https://img.shields.io/badge/Attacker-Defender-orange">
+  <img src="https://img.shields.io/badge/Python-Framework-yellow">
   <img src="https://img.shields.io/badge/Kali-Linux-red">
-  <img src="https://img.shields.io/badge/Logs-Windows_Event_Logs-yellow">
-  <img src="https://img.shields.io/badge/MARL-PPO-purple">
-  <img src="https://img.shields.io/badge/Framework-Cybersecurity-darkblue">
+  <img src="https://img.shields.io/badge/Visualization-Matplotlib-green">
+  <img src="https://img.shields.io/badge/Environment-GraphBased-black">
 </p>
 
 ---
 
-# Cybersecurity Multi-Agent Reinforcement Learning Framework
+# Cymarl-Framework
 
-A research-oriented Cyber MARL framework designed for attacker–defender simulations in enterprise-like environments using reinforcement learning, PPO training, and cybersecurity event analysis.
+Cymarl-Framework is a Cybersecurity Multi-Agent Reinforcement Learning (MARL) framework designed for attacker–defender simulations in graph-based cyber environments.
 
-This project simulates adversarial cyber behavior where intelligent agents interact dynamically in a monitored network environment. The framework supports attack simulation, defense response analysis, reward engineering, and visualization of training metrics.
+The framework models interactions between intelligent attacker and defender agents where both learn adaptive strategies using Proximal Policy Optimization (PPO). The project focuses on cyber attack path traversal, dynamic defense decisions, reward optimization, and reinforcement learning–based cybersecurity experimentation.
+
+The environment simulates cyber conflict scenarios where attackers attempt to compromise network nodes while defenders attempt to secure critical assets and minimize attack success.
 
 ---
 
-# Features
+# Core Features
 
 - Multi-Agent Reinforcement Learning (MARL)
-- PPO-based training architecture
-- Attacker vs Defender cyber simulation
-- Reward engineering and policy optimization
-- Network attack emulation
-- Training metric generation
-- GIF-based simulation visualization
-- Security event logging and monitoring
-- Splunk and Sysmon integration concepts
-- Cyber attack path experimentation
+- PPO-based attacker and defender training
+- Graph-based cyber environment
+- Attack path simulation
+- Dynamic reward engineering
+- Cyber node compromise simulation
+- Defender response mechanisms
+- Training metric visualization
+- GIF-based environment rendering
+- Research-focused cyber experimentation
 
 ---
 
@@ -39,28 +42,150 @@ This project simulates adversarial cyber behavior where intelligent agents inter
 
 | Category | Technologies |
 |---|---|
-| Programming | Python |
-| RL Framework | PPO |
+| Programming Language | Python |
+| RL Algorithm | PPO |
+| Environment Modeling | Graph-based Simulation |
 | Visualization | Matplotlib |
-| Security Monitoring | Splunk |
-| Endpoint Monitoring | Sysmon |
-| Environment | Kali Linux |
-| Data Handling | NumPy, Pandas |
-| Logging | Windows Event Logs |
+| Numerical Computing | NumPy |
+| Data Handling | Pandas |
+| Platform | Kali Linux |
 
 ---
 
-# Project Architecture
+# Framework Workflow
 
 ```text
 Attacker Agent
        ↓
-Attack Simulation Environment
+Graph-Based Cyber Environment
        ↓
 Defender Agent
        ↓
-Reward Calculation
+State Transition & Rewards
        ↓
-PPO Training Loop
+PPO Training Process
        ↓
 Metrics & Visualization
+```
+
+---
+
+# Project Structure
+
+```text
+Cymarl-Framework/
+│
+├── src/
+├── models/
+├── plots/
+├── gifs/
+├── metrics/
+├── compute_metrics.py
+├── plot_training.py
+├── generate_gif.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Akhilesh-kolli/Cymarl-Framework-.git
+```
+
+Move into the project directory:
+
+```bash
+cd Cymarl-Framework-
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Running the Framework
+
+Run training:
+
+```bash
+python train.py
+```
+
+Generate metrics:
+
+```bash
+python compute_metrics.py
+```
+
+Plot training graphs:
+
+```bash
+python plot_training.py
+```
+
+Generate environment GIF:
+
+```bash
+python generate_gif.py
+```
+
+---
+
+# Generated Outputs
+
+The framework generates:
+
+- PPO training metrics
+- Reward convergence graphs
+- Attack success analysis
+- Defender efficiency metrics
+- Training visualizations
+- Animated cyber environment simulations
+- Graph traversal analysis
+
+---
+
+# Research Applications
+
+- Cybersecurity reinforcement learning
+- Autonomous cyber defense research
+- Attacker–defender simulations
+- Graph-based threat modeling
+- Adaptive defense strategy analysis
+- AI-driven cyber experimentation
+
+---
+
+# Future Enhancements
+
+- Multi-defender coordination
+- Advanced adversarial RL algorithms
+- Real-time simulation dashboards
+- Scalable distributed training
+- Explainable AI for cyber decisions
+- Dynamic network topology generation
+
+---
+
+# Author
+
+## Akhilesh Kolli
+
+Cybersecurity Research | Reinforcement Learning | Threat Simulation
+
+GitHub:
+https://github.com/Akhilesh-kolli
+
+---
+
+# License
+
+This project is intended for academic and cybersecurity research purposes.
