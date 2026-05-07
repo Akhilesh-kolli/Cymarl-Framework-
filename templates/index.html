@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyber MARL Simulation</title>
+    <style>
+        body { font-family: Arial; background: #111; color: #eee; }
+        button { padding: 10px; font-size: 16px; }
+        .log { margin: 5px 0; }
+        .attacker { color: #ff4d4d; }
+        .defender { color: #4dff4d; }
+    </style>
+</head>
+<body>
+
+<h1>Attacker vs Defender MARL Simulation</h1>
+
+<form action="/simulate" method="post">
+    <button type="submit">Run Simulation</button>
+</form>
+
+<hr>
+
+{% if logs %}
+    <h2>Simulation Log</h2>
+    {% for log in logs %}
+        <div class="log {{ log.agent }}">
+            Step {{ log.step }} |
+            {{ log.agent.upper() }} |
+            Action: {{ log.action }} |
+            Reward: {{ log.reward }} |
+            State: {{ log.state }}
+        </div>
+    {% endfor %}
+{% else %}
+    <p>No simulation run yet.</p>
+{% endif %}
+
+</body>
+</html>

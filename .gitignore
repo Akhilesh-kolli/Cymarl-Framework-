@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.zip
+gif_frames/
+ppo_logs/
+*.png
+*.gif
