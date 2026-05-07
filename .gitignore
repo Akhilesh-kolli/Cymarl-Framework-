@@ -1,9 +1,50 @@
-venv/
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
-*.zip
-gif_frames/
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Training logs
 ppo_logs/
-*.png
-*.gif
+tensorboard_logs/
+runs/
+
+# Temporary generated frames
+gif_frames/
+temp/
+tmp/
+
+# Archived experiment outputs
+archived_runs/
+checkpoints/
+old_results/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model cache
+.cache/
+
+# Keep latest result images and GIFs
+# (Do NOT ignore .png or .gif globally)
+
+# Optional large model files
+*.pt
+*.pth
+*.ckpt
+
+# Optional compressed files
+*.zip
+*.tar.gz

@@ -41,8 +41,8 @@ def main():
     save_path = model_dir / "ppo_attacker_graph"
     model.save(str(save_path))
 
-    print("\n✅ Attacker saved to:", save_path)
-    print("✅ Logs saved to:", log_dir / "attacker_monitor.csv")
+    print("\n Attacker saved to:", save_path)
+    print("Logs saved to:", log_dir / "attacker_monitor.csv")
 
 
 if __name__ == "__main__":
